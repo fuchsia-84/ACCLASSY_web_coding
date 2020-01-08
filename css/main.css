@@ -1,12 +1,79 @@
 @charset "utf-8";
 @import url(../css/html5reset-1.6.1.css); /*reset css*/
 
+/* common */
 .inner {
-  width: 100%;
+  width: 980px;
   margin: auto;
 }
 .inner:after {
   content: "";
   clear: both;
   display: block;
+}
+* {
+  color: #333333;
+}
+h1 {
+  font-family: Times,'Times New Roman',serif;
+}
+p {
+  font-family: "ヒラギノ明朝 Pro W6","Hiragino Mincho Pro","ＭＳ Ｐ明朝","MS PMincho",serif;
+}
+a {
+  text-decoration: none;
+  font-family: Times,'Times New Roman',serif;
+}
+
+/* header */
+#header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background: #FFFFFF;
+  opacity: 0.8;
+  z-index: 900;
+}
+#header .inner {
+  position: relative;
+  z-index: 901;
+}
+#header #global_nav {
+  display: none;
+}
+#header a#header_logo {
+  display: block;
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 902;
+  top: 23px;
+}
+#header .toggle_btn {
+  display: block;
+  width: 45px;
+  height: auto;
+  position: absolute;
+  z-index: 903;
+  right: 0;
+  top: 27px;
+}
+#header .toggle_btn div {
+  position: relative;
+}
+#header .toggle_btn div span{
+  width: 100%;
+  height: 3px;
+  background: #707070;
+  position: absolute;
+}
+#header .toggle_btn div span:nth-child(1){
+  top: 0;
+}
+#header .toggle_btn div span:nth-child(2){
+  top: 13px;
+}
+#header .toggle_btn div span:nth-child(3){
+  top: 26px;
 }
