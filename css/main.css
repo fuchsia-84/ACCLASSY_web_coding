@@ -5,7 +5,6 @@
 .inner {
   width: calc(100% - 40px);
   max-width: 980px;
-  /*width: 980px;*/
   margin: auto;
   padding: 80px 0;
 }
