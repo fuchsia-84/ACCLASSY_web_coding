@@ -382,18 +382,19 @@ a#all_items_link {
 }
 #styles .styles_slider {
   width: 100%;
-  height: 705px;
+  height: auto;
   margin: 50px auto 0;
 }
 .slider_1 {
   display: inline-block;
   width: 100%;
-  height: 705px;
+  height: auto;
 }
 .slider_1 img {
   display: block;
   width: 100%;
   height: 705px;
+  object-fit: cover;
   margin: 0 auto;
 }
 /* flickity */
@@ -411,6 +412,22 @@ a#all_items_link {
 /* fill-in selected dot */
 #styles .flickity-page-dots .dot.is-selected {
   background: white;
+}
+@media screen and (max-width: 940px) {
+  .slider_1 img {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #styles .inner {
+    width: 100%;
+  }
+  #styles .styles_slider {
+    margin: 30px auto 0;
+  }
+  .slider_1 img {
+    height: 600px;
+  }
 }
 
 /* shop */
