@@ -74,8 +74,30 @@ a {
   z-index: 901;
 }
 #header #global_nav {
-  display: none;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0,0,0,0.6);
+  padding-top: 80px;
 }
+#header #global_nav ul {
+  display: block;
+  width: calc(100% - 40px);
+  max-width: 980px;
+  height: 570px;
+  background: rgb(255,255,255,0.9);;
+  margin: 0 auto;
+  list-style: none;
+}
+#header #global_nav ul li{
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: bold;;
+  padding-top: 10px;
+  border-bottom: 1px solid #666666;
+}
+
 #header a#header_logo {
   display: block;
   font-size: 34px;
@@ -88,11 +110,12 @@ a {
 #header .toggle_btn {
   display: block;
   width: 45px;
-  height: auto;
+  height: 30px;
   position: absolute;
   z-index: 903;
   right: 0;
   top: 27px;
+  cursor: pointer;
 }
 #header .toggle_btn div {
   position: relative;
@@ -102,6 +125,9 @@ a {
   height: 3px;
   background: #707070;
   position: absolute;
+  -webkit-transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  transition: .35s ease-in-out;
 }
 #header .toggle_btn div span:nth-child(1){
   top: 0;
@@ -112,9 +138,40 @@ a {
 #header .toggle_btn div span:nth-child(3){
   top: 26px;
 }
+/* Open */
+/* #toggle_btn 切り替えアニメーション */
+#header.open #toggle_btn div span{
+  background: #EEEEEE;
+}
+#header.open #toggle_btn span:nth-child(1) {
+  top: 13px;
+  -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+#header.open #toggle_btn span:nth-child(2) {
+  width: 0;
+  left: 50%;
+}
+#header.open #toggle_btn span:nth-child(3) {
+  top: 13px;
+  -webkit-transform: rotate(-315deg);
+  -moz-transform: rotate(-315deg);
+  transform: rotate(-315deg);
+}
 @media screen and (max-width: 768px) {
   #header {
     height: 40px;
+  }
+  #header #global_nav {
+    padding-top: 40px;
+  }
+  #header #global_nav ul {
+    height: 570px;
+  }
+  #header #global_nav ul li{
+    font-size: 20px;
+    line-height: 40px;
   }
   #header a#header_logo {
     font-size: 20px;
@@ -123,6 +180,7 @@ a {
   }
   #header .toggle_btn {
     width: 20px;
+    height: 20px;
     right: 0;
     top: 12px;
   }
@@ -132,6 +190,20 @@ a {
   #header .toggle_btn div span:nth-child(3){
     top: 16px;
   }
+  /* Open */
+  /* #toggle_btn 切り替えアニメーション */
+  #header.open #toggle_btn span:nth-child(1) {
+    top: 8px;
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    transform: rotate(315deg);
+  }
+  #header.open #toggle_btn span:nth-child(3) {
+    top: 8px;
+    -webkit-transform: rotate(-315deg);
+    -moz-transform: rotate(-315deg);
+    transform: rotate(-315deg);
+}
 }
 
 /* top */
