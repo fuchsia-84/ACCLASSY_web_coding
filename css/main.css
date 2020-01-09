@@ -493,6 +493,7 @@ a#all_items_link {
   #shop .shop_contents dl {
     display: block;
     width: 100%;
+    margin: 0 auto;
     position: static;
   }
   #shop .shop_contents dl dd {
