@@ -229,3 +229,45 @@ a#all_items_link {
   font-weight: bold;
   margin-left: 20px; 
 }
+
+/* styles */
+#styles {
+  display: block;
+  width: 100%;
+  background: #E2E2E2;
+}
+#styles .inner {
+  padding-bottom: 0;
+}
+#styles .styles_slider {
+  width: 100%;
+  height: 705px;
+  margin: 50px auto 0;
+}
+.slider_1 {
+  display: inline-block;
+  width: 100%;
+  height: 705px;
+}
+.slider_1 img {
+  display: block;
+  width: 100%;
+  height: 705px;
+  margin: 0 auto;
+}
+/* flickity */
+#styles .flickity-page-dots {
+  bottom: 20px;
+}
+/* white circles */
+#styles .flickity-page-dots .dot {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  background: transparent;
+  border: 1px solid white;
+}
+/* fill-in selected dot */
+#styles .flickity-page-dots .dot.is-selected {
+  background: white;
+}
