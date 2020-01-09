@@ -534,6 +534,24 @@ a#all_items_link {
 #sns_links .sns_icons a i {
   color: #FFFFFF;
 }
+@media screen and (max-width: 940px) {
+  #sns_links {
+    height: 150px;
+  }
+  #sns_links .sns_icons a {
+    font-size: 40px;
+    margin-top: 55px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #sns_links {
+    height: 80px;
+  }
+  #sns_links .sns_icons a {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+}
 
 /* footer */
 #footer {
