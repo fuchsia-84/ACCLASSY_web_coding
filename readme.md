@@ -20,6 +20,8 @@
 
 - **レスポンシブ対応**: PC版、タブレット版、SP版と画像幅に対応してレイアウトが変化します。
 
+![accrassy_responsive](https://user-images.githubusercontent.com/46129202/140887960-e50e6788-82d2-4765-9781-db5f29cdc694.png)
+
 ## デザインの工夫点
 
 - 配色
