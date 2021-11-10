@@ -1,12 +1,14 @@
 # ACCLASSY_web_coding
 
-このリポジトリは、Webサイト [ACCLASSY](https://fuchsia-84.github.io/ACCLASSY_web_coding/) のソースコードです。
+このリポジトリは、Webサイト <u>[ACCLASSY](https://fuchsia-84.github.io/ACCLASSY_web_coding/) のソースコード</u>です。
+
+<span style="color: red;">※仮想、架空のWebサイト</span>
 
 上記リンクは、このリポジトリをGitHub Pagesで公開しています。
 
 ## 制作テーマ
 
-- 仮想のアクセサリーショップLP
+- <u>**仮想のアクセサリーショップLP**</u>
 
 - **ペルソナ**: 20代〜60代の女性、上質なものを求める客層向け
 
@@ -18,7 +20,7 @@
 
 ## 機能
 
-- **レスポンシブ対応**: PC版、タブレット版、SP版と画像幅に対応してレイアウトが変化します。
+- <u>**レスポンシブ対応**</u>: PC版、タブレット版、SP版と画像幅に対応してレイアウトが変化します。
 
 ![accrassy_responsive](https://user-images.githubusercontent.com/46129202/140887960-e50e6788-82d2-4765-9781-db5f29cdc694.png)
 
@@ -71,5 +73,5 @@
 ## 参考(使用ツール等)
 
 - [HTML5 Reset Stylesheet \| HTML5 Doctor](http://html5doctor.com/html-5-reset-stylesheet/)
-
 - [Flickity](https://flickity.metafizzy.co/)
+- [2.400万点以上の高品質なフリー画像素材 - Pixabay](https://pixabay.com/ja/)
